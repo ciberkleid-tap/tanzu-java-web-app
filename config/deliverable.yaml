@@ -1,3 +1,4 @@
+# Apply tu RUN cluster(s)
 apiVersion: carto.run/v1alpha1
 kind: Deliverable
 metadata:
@@ -5,14 +6,6 @@ metadata:
     app.kubernetes.io/component: deliverable
     app.kubernetes.io/part-of: tanzu-java-web-app
     app.tanzu.vmware.com/deliverable-type: web
-    # apps.tanzu.vmware.com/auto-configure-actuators: "true"
-    # apps.tanzu.vmware.com/has-tests: "true"
-    # apps.tanzu.vmware.com/workload-type: web
-    carto.run/cluster-template-name: deliverable-template
-    carto.run/resource-name: deliverable
-    carto.run/supply-chain-name: source-test-scan-to-url
-    carto.run/template-kind: ClusterTemplate
-    carto.run/template-lifecycle: mutable
     carto.run/workload-name: tanzu-java-web-app
     carto.run/workload-namespace: demo-apps
   name: tanzu-java-web-app
