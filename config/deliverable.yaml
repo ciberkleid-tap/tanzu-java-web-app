@@ -11,12 +11,9 @@ metadata:
   name: tanzu-java-web-app
   namespace: demo-apps
 spec:
-  params:
-  - name: gitops_ssh_secret
-    value: git-ssh
   source:
     git:
       ref:
         branch: main
-      url: ssh://git@github.com/ciberkleid-tap/tap-workload-gitops.git
+      url: https://github.com/ciberkleid-tap/tap-workload-gitops.git
     subPath: config/demo-apps/tanzu-java-web-app
