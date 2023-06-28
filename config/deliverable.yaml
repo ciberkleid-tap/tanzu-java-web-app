@@ -3,7 +3,7 @@ apiVersion: carto.run/v1alpha1
 kind: Deliverable
 metadata:
   name: tanzu-java-web-app
-  namespace: demo-apps
+  namespace: demo-apps-prod
   labels:
     app.kubernetes.io/component: deliverable
     app.kubernetes.io/part-of: tanzu-java-web-app
